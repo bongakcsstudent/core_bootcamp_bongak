@@ -13,7 +13,7 @@ describe("SolidityModifiers", function () {
     const SolidityModifiers = await hre.ethers.getContractFactory(
       "SolidityModifiers"
     );
-    const INITIAL_BALANCE = 1_000_000;
+    const INITIAL_BALANCE = 50;
 
     const ctcSolidityModifiers = await SolidityModifiers.deploy(
       INITIAL_BALANCE,
