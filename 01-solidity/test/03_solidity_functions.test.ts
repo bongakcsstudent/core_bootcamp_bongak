@@ -35,7 +35,22 @@ describe("SolidityFunctions", function () {
       await ctcSolidityFunctions.addBalance(1_000_000);
 
       const balance = await ctcSolidityFunctions.getBalance();
-      console.log("balance is now ", balance);
+      console.log("Singkwenta:  ", balance);
+
+      it("perform operations", async function () {
+        const { ctcSolidityFunctions } = await loadFixture(deploy);
+        await ctcSolidityFunctions.calculatorNiBai(1,25_000);
+         let balance = await ctcSolidityFunctions.getBalance();
+         console.log("current balance ", balance);
+        await ctcSolidityFunctions.calculatorNiBai(2,25_000);
+         balance = await ctcSolidityFunctions.getBalance();
+         console.log("current balance ", balance);
+        await ctcSolidityFunctions.calculatorNiBai(3,25_000);
+         balance = await ctcSolidityFunctions.getBalance();
+         console.log("current balance ", balance);
+        await ctcSolidityFunctions.calculatorNiBai(4,25_000);
+         balance = await ctcSolidityFunctions.getBalance();
+        console.log("current balance ", balance);
     });
   });
 });

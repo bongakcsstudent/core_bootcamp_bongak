@@ -27,4 +27,6 @@ contract SolidityErrors {
     function getBalance() public view returns (uint256) {
         return balance;
     }
+
+    
 }

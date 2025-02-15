@@ -16,4 +16,22 @@ contract SolidityFunctions {
     function getBalance() public view returns (uint256) {
         return balance;
     }
+
+   function calculatorNiBai(uint mode, uint256 amount) public {
+        if (mode == 1) {
+            balance += amount;
+        } 
+        
+        else if (mode == 2) {
+            balance -= amount;
+        } 
+        
+        else if (mode ==3){
+            balance *= amount;
+        }
+
+        else if (mode ==4){
+            balance /= amount;
+        }
+    }
 }
