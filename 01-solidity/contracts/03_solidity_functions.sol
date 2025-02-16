@@ -6,18 +6,19 @@ contract SolidityFunctions {
     uint256 balance = 0;
 
     constructor(uint256 initialBalance) {
-        balance = initialBalance;
+        balance = initialBalance;        
     }
 
-    function addBalance(uint256 toAddBalance) public {
+     function addBalance(uint256 toAddBalance) public {
         balance += toAddBalance;
     }
+
 
     function getBalance() public view returns (uint256) {
         return balance;
     }
 
-   function calculatorNiBai(uint mode, uint256 amount) public {
+    function calculator(uint mode, uint256 amount) public {
         if (mode == 1) {
             balance += amount;
         } 
@@ -35,3 +36,5 @@ contract SolidityFunctions {
         }
     }
 }
+
+//erc tokens
