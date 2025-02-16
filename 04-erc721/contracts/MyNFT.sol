@@ -15,10 +15,10 @@ contract MyNFT is ERC721URIStorage {
         _safeMint(msg.sender, tokenId);
         _setTokenURI(
             tokenId,
-            "https://path/to/metadata-uri"
+            "https://raw.githubusercontent.com/bongakcsstudent/core_bootcamp_bongak/refs/heads/main/04-erc721/metadata.json"
         );
         tokenId++;
 
-        //The minting pro
+        //The minting process...
     }
 }
